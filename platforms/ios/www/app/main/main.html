@@ -1,0 +1,88 @@
+<ion-view title="Welcome {{mainVm.name}}">
+  <ion-content>
+    <!-- <div class="row">
+      <div class="col col-33 col-offset-33">
+        <button class="button button-small ion-plus-round button-positive"> Create Event</button>
+      </div>
+    </div> -->
+    <div>
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+         <span class="input-label input-positive">Event Name</span>
+         <input type="text" placeholder="John" ng-model="mainVm.eventName">
+        </label>
+        <label class="item item-input item-select">
+          <div class="input-label input-positive">
+            Event Type
+          </div>
+          <select ng-model="mainVm.eventType">
+            <option selected> Select Type</option>
+            <option value="Party">Party</option>
+            <option value="Technical Meet">Technical Meet</option>
+            <option value="Business Meet">Business Meet</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Career Fair">Career Fair</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Brunch">Brunch</option>
+            <option value="Netwokring Event">Netwokring Event</option>
+            <option value="Tournament">Tournament</option>
+            <option value="Coding Competition">Coding Competition</option>
+            <option value="Competition">Competition</option>
+            <option value="Seminar">Seminar</option>
+            <option value="Conference">Conference</option>
+            <option value="Teaching Event">Teaching Event</option>
+            <option value="Charity Event">Charity Event</option>
+            <option value="VIP Party">VIP Party</option>
+            <option value="Press Conference">Press Conference</option>
+            <option value="Award Ceremony">Award Ceremony</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Colloquium">Colloquium</option>
+            <option value="Annual Meeting">Annual Meeting</option>
+            <option value="Expo">Expo</option>
+            <option value="Exhibition">Exhibition</option>
+            <option value="Fair">Fair</option>
+            <option value="Fundraisers">Fundraisers</option>
+            <option value="Reception">Reception</option>
+            <option value="Orientation">Orientation</option>
+          </select>
+        </label>
+        <label class="item item-input item-stacked-label">
+         <span class="input-label input-positive">Event Host</span>
+         <input type="text" placeholder="John" ng-model="mainVm.eventHostName">
+        </label>
+        <label class="item item-input item-stacked-label add-padding" ng-click="mainVm.openStartDatePicker()">
+         <span class="input-label input-positive" >Event Start Date</span>
+         <span class="right"> {{mainVm.startVal}}</span>
+        </label>
+        <label class="item item-input item-stacked-label add-padding" ng-click="mainVm.openEndDatePicker()">
+         <span class="input-label input-positive" >Event End Date</span>
+         <span class="right"> {{mainVm.endVal}}</span>
+        </label>
+        <label class="item item-input item-stacked-label">
+         <span class="input-label input-positive">Guest List</span>
+         <input type="text" placeholder="John, Tina" ng-model="mainVm.eventGuestList">
+        </label>
+        <label class="item item-input item-stacked-label">
+         <span class="input-label input-positive">Location</span>
+         <input type="text" placeholder="NewYork" ng-model="mainVm.eventLocation">
+        </label>
+        <label class="item item-input item-stacked-label">
+         <span class="input-label input-positive">Optional Message</span>
+         <input type="text" placeholder="Don't Miss the Event" ng-model="mainVm.eventMessage">
+        </label>
+        <div class="row">
+          <div class="col col-66">
+            <button class="button button-block button-outline button-positive" ng-click="mainVm.createEvent()">
+              Create Event
+            </button>
+          </div>
+          <div class="col col-33" ng-click="mainVm.logout()">
+            <button class="button button-block button-outline button-assertive" ng-click="mainVm.createEvent()">
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

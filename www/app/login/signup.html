@@ -1,0 +1,23 @@
+<ion-view title="Signup">
+  <ion-content>
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+       <span class="input-label input-positive">Name</span>
+       <input type="text" placeholder="John" ng-model="loginVm.signupName">
+      </label>
+      <label class="item item-input item-stacked-label">
+       <span class="input-label input-positive">Email</span>
+       <input type="email" placeholder="John@abc" ng-model="loginVm.signupEmail">
+      </label>
+      <label class="item item-input item-stacked-label">
+       <span class="input-label input-positive">Password</span>
+       <input type="password" placeholder="password" ng-model="loginVm.signupPassword">
+      </label>
+    </div>
+    <div class="text-center">
+      <button class="button button-outline button-positive button-center" ng-click="loginVm.signup()">
+        Sign Up
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

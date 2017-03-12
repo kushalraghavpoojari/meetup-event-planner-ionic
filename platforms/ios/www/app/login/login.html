@@ -1,0 +1,29 @@
+<ion-view title="Login">
+  <ion-content>
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+       <span class="input-label input-positive">Email</span>
+       <input type="email" placeholder="John" ng-model="loginVm.login.email">
+      </label>
+      <label class="item item-input item-stacked-label">
+       <span class="input-label input-positive">Password</span>
+       <input type="password" placeholder="password" ng-model="loginVm.login.password">
+      </label>
+    </div>
+    <div ng-if="loginVm.error">
+      <div class="row">
+        <div class="col col-45 col-offset-45">
+          <div style="color:red;">
+            Email/Password is not correct
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center">
+      <button class="button button-outline button-positive button-center" ng-click="loginVm.login()">
+        Login
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

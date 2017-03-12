@@ -1,0 +1,60 @@
+<ion-view title="Events created by {{eventVm.name}}">
+  <ion-content>
+    <div ng-repeat="event in eventVm.events">
+      <div class="card">
+      <div class="item item-text-wrap">
+        <div class="list">
+          <div class="item">
+            <label class="item item-input item-stacked-label">
+             <span class="input-label input-positive">Event Name</span>
+             <span>{{event.name}}</span>
+            </label>
+            <label class="item item-input item-stacked-label">
+             <span class="input-label input-positive">Event Type</span>
+             <span>{{event.type}}</span>
+            </label>
+            <label class="item item-input item-stacked-label">
+             <span class="input-label input-positive">Event Host</span>
+             <span>{{event.host}}</span>
+            </label>
+            <label class="item item-input item-stacked-label">
+             <span class="input-label input-positive">Start Date</span>
+             <span>{{event.start}}</span>
+            </label>
+            <label class="item item-input item-stacked-label">
+             <span class="input-label input-positive">End Date</span>
+             <span>{{event.end}}</span>
+            </label>
+            <label class="item item-input item-stacked-label">
+             <span class="input-label input-positive">Guest List</span>
+             <span>{{event.guests}}</span>
+            </label>
+            <label class="item item-input item-stacked-label">
+             <span class="input-label input-positive">Location</span>
+             <span>{{event.location}}</span>
+            </label>
+            <label class="item item-input item-stacked-label">
+             <span class="input-label input-positive">Message</span>
+             <span>{{event.message}}</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row" ui-sref="main">
+      <div class="col">
+        <button class="button button-block button-outline button-positive" >
+          Create Another Event
+        </button>
+      </div>
+    </div>
+    <div class="row" ng-click="eventVm.logout()">
+      <div class="col">
+        <button class="button button-block button-outline button-assertive" >
+          Logout
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

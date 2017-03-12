@@ -1,0 +1,24 @@
+{
+  "name": "meetup",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.3.3"
+  },
+  "dependencies": {
+    "ionic-datepicker": "^1.2.1",
+    "moment": "^2.17.1"
+  },
+  "authors": [
+    "Kushal Raghav Poojari <kushalraghavpoojari@gmail.com>"
+  ],
+  "description": "Meetup Event Planning Application using Ionic Framework",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
